@@ -145,7 +145,7 @@ kubernetes   ClusterIP      10.96.0.1       <none>        443/TCP        3d
 
 The `CLUSTER-IP` in your case might be different but the ports should indicate the port that the cluster is using to access the application (80) and the port that the cluster node exposes to the world to access the application (31000)
 
-### Test
+### Test
 
 Run the `kubectl cluster-info` command again to get the IP of the cluster node:
 
@@ -168,7 +168,7 @@ Hello world! my IP is 172.17.0.6
 
 Run the command multiple times and you will see that the IP changes to reflect that the requests are load balanced between the pods.
 
-## Remove the application
+## Remove the application
 
 To tear down the service and deployment run the following commands:
 
